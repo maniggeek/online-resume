@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+<!--title-->
+<title>{% block title %}Home{% endblock title %}</title>
+
+  {% block content %}
+    <!-- Navbar -->
+
+    <nav id="navbar"  class="  navbar  navbar-expand-lg fixed-top">
+      <!-- main container-->
+        <div class="container ">
+            <!-- navbar-brand-->
+            <a class="navbar-brand" data-aos="fade-right" data-aos-delay="1500" href="#home"><img style='color:var(--c-light);' src="{% static 'assets/images/lable.png' %}" alt=""></a><!--end brand-->
+            <!--mobile-humberger-->
+            <!--mobile-humberger-->
+            <button id='mobile_button' class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img  id='mobile_button' src="https://img.icons8.com/material-rounded/24/FFFFFF/menu--v1.png"/></span>
+            </button><!--end mobile humberger-->
+
+            <!--navbar-nav-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                 <!--internal links-->
+                 <!-- what is mx-auto in bootstrap?-->
+                <ul class="navbar-nav mx-auto gap-2">
+                    <li data-aos="fade-dwon" data-aos-delay="1550" class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li data-aos="fade-dwon" data-aos-delay="1650" class="nav-item">
+                        <a class="nav-link" href="#work">Why Surveying</a>
+                    </li>
+                    <li data-aos="fade-dwon" data-aos-delay="1700" class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li data-aos="fade-dwon" data-aos-delay="1750" class="nav-item">
+                        <a class="nav-link" href="#contact">Hire Me</a>
+                    </li>
+                </ul> <!--end internal links -->
+
+                <!-- social media links -->
+                <ul class="navbar-nav gap-1 flex-row">
+                    <li data-aos="fade-dwon" data-aos-delay="1800" class="nav-item">
+                        <a class="social-icon twitter" href="https://www.twitter.com"><i class="twitter ri-twitter-line"></i></a>
+                    </li>
+                    <li data-aos="fade-dwon" data-aos-delay="1800" class="nav-item">
+                        <a class="social-icon linkedin" href="https://www.linkedin.com"><i class="linkedin ri-linkedin-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-aos="fade-dwon" data-aos-delay="2000" class="social-icon instagram" href="https://www.instagram.com"><i class="instagram ri-instagram-line"></i></a>
+                    </li>
+                </ul><!-- end of social media links -->
+
+            </div>
+        </div> <!--end of main--container-->
+
+    </nav> <!-- end of the navbar-->
+    <!--Home Section-->
+    <!--min-vh-100 is important to center the pic-->
+
+    <section id="home" class=" d-flex justify-content-center align-items-center min-vh-100">
+
+        <!-- row always must have container -->
+
+        <div class="container-fluid">
+            <div class="row mask">
+                <div  class="welcome  col-md-6 d-flex justify-content-center flex-column align-items-center" >
+                    <h1 class="display-2 mb-3 fw-bold d-flex justify-content-center" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="3000">Hi I am <span style='color:#457b9d;' class="text-brand ms-3">Venus</span></h1>
+                    <h4  style="text-align:center;" data-aos="fade-up" data-aos-delay="1500" class=" mt-3 mb-5" data-aos-duration="3000">An exprienced Surveyor </h4>
+                    <div class='d-flex justify-content-center' data-aos="fade-up" data-aos-delay="1500" data-aos-duration="3000"><a href="#contact" class="btn btn-brand ">Hire Me</a></div>
+                </div>
+            </div>
+        </div><!-- end home section-->
+    </section>
+
+
+
+    <!--Work Section-->
+    <section id="work" class="section-padding ">
+
+      <div class="container " >
+        <div class="row  mb-4">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                <d100class="setion-title text-center mt-0 ">
+                    <h1 class='work__title__h1 text-center'>Rich History</h1>
+                    <p class='work__title__text text-center'>I Love my job because of Its History</p>
+                    <div class="line mb-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-2 mt-4">
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-right" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img  class='rounded' src="{% static 'assets/images/p-1.jpg' %}" alt="">
+                    <!--<div class="content">
+                        <a href="#" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-left" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img class='rounded' src="{% static 'assets/images/p-2.jpg' %}" alt="">
+
+                    <!--<div class="content">
+                        <a href="{% static 'assets/images/p-1.jpg' %}" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-right" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img class='rounded' src="{% static 'assets/images/p-3.jpg' %}" alt="">
+
+                    <!--<div class="content">
+                        <a href="{% static 'assets/images/p-1.jpg' %}" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-left" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img class='rounded' src="{% static 'assets/images/p-4.jpg' %}" alt="">
+
+                    <!--<div class="content">
+                        <a href="{% static 'assets/images/p-1.jpg' %}" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-right" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img class='rounded' src="{% static 'assets/images/p-5.jpg' %}" alt="">
+
+                    <!--<div class="content">
+                        <a href="{% static 'assets/images/p-1.jpg' %}" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 " data-aos="fade-left" data-aos-delay="100">
+                <div class="gallary-item">
+                    <img class='rounded' src="{% static 'assets/images/p-6.jpg' %}" alt="">
+
+                    <!--<div class="content">
+                        <a href="{% static 'assets/images/p-1.jpg' %}" data-fancybox="gallery" class="btn btn-outline-light">View Project</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--resume seon -->
+   <section id="resume" class="section-padding ">
+     <div class="container">
+       <div class="row">
+           <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+               <div class="setion-title text-center">
+                   <h1>Education & Experience</h1>
+                   <p>Willing To Go Overseas And Learn More</p>
+                   <div class="line "></div>
+               </div>
+           </div>
+       </div>
+       <div class="row gy-5">
+           <div class="col-md-6">
+               <div class="row">
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0">
+                           <h5>AmirKabir University</h5>
+                           <small class="text-brand">2008 - 2012</small>
+                           <p class="mb-0">Bachelor of Mapping Engineering</p>
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0">
+                           <h5>Shahid Rajaee Teacher Training University</h5>
+                           <small class="text-brand">2014 - 2016</small>
+                           <p class="mb-0">Master's degree in GIS spatial information system</p>
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0 pb-0">
+                           <h5>Iran-Canada English Institude  </h5>
+                           <small class="text-brand">2019 - 2022</small>
+                           <p class="mb-0">CPE Certified</p>
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 mt-3 pt-0 pb-0">
+                           <h5>Softwares</h5>
+                           <ul>
+                             <li class="mb-0 ">ArchGIS Desktop</li>
+                             <li class="mb-0 ">Autocad Civil3D</li>
+                             <li class="mb-0 ">Autocad Land</li>
+                             <li class="mb-0 ">Global Mapper</li>
+                              <li class="mb-0 ">MATLAP Programming</li>
+                              <li class="mb-0 ">QGIS</li>
+                              <li class="mb-0 ">ICDL</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-6">
+               <div class="row">
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0">
+                           <h5>Negaravar Sharq Company</h5>
+                           <small class="text-brand">2012 - 2013</small>
+                           <ul>
+                             <li class="mb-0">Edit and GIS-Ready for IR-MCI telecommunications map preparation</li>
+                             <li class="mb-0">DEM  and DSM preparation for North and Northeast Province </li>
+                           </ul>
+
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0">
+                           <h5>Kian Petrozist Company</h5>
+                           <small class="text-brand">2013 - 2014</small>
+                           <p class="mb-0">GIS Unit Expert</p>
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0 pb-0">
+                           <h5>Atlas Rahnegar Company</h5>
+                           <small class="text-brand">2016 - 2020</small>
+                           <ul>
+                             <li class="mb-0">Preparing the ways of whole Country through Google Map Update and OSM</li>
+                             <li class="mb-0">Eliminating urban topologic errors of achieved data</li>
+                             <li class="mb-0">Preparing the whole country's map ways</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                       <div class=" resume__item p-5 pt-0 pb-0">
+                           <h5>Persian Parmis</h5>
+                           <small class="text-brand">2020 - Now</small>
+                           <p class="mb-0">GIS Unit Expert</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+     </div>
+   </section>
+
+   <section id='contact' class=' bg-dark text-light contact mt-4 p-4'>
+         <h2 style='color:var(--c-dark);' class=' contact_head text-center mt-4 text-light'>Hire Me</h2>
+         <h5 style='color:var(--c-dark);' class=' contact_head text-center mt-4 mb-4 text-light'>I am available to participate in your project</h5>
+     <div class="container-fluid w-100 d-flex align-items-center justify-content-center" >
+       <form action="" method="post">
+       {% csrf_token %}
+       {{ form | crispy  | cut:'*'}}
+       <button type="submit" class="btn btn-outline-warning rounded">Send</button>
+     </form>
+     </div>
+   </section>
+   <footer class="footer_area mask">
+     <div class="container">
+       <div class="row justify-content-center">
+         <div class="col-lg-12">
+           <div class="footer_top flex-column">
+               <h4 style='font-weight:800; color:var(--c-dark);'class='text-center  footer_top_text '>Follow Me</h4>
+             <div class="footer_social w-100 d-flex justify-content-center align-items-center">
+               <a href="#"><i class="fa fa-instagram"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-linkedin"></i></a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="row mask footer_bottom justify-content-center">
+         <p class="col-lg-8 col-sm-12 footer-text copyright">Copyright &copy;
+           <script>document.write(new Date().getFullYear());</script>
+           All rights reserved | This gift has been made with all
+           <i class="fa fa-heart-o" aria-hidden="true"></i> by
+           <a class='mani' href="https://www.instagram/maniggeek" target="_blank">Mani GeeK
+           </a>for My kind friend <a class='mani' href="https://www.instagram/zohre">Venus</a></p>
+       </div>
+     </div>
+   </footer>
+
+
+     <div id="preloader">
+       <div class="line"></div>
+     </div>
+
+{% endblock content %}

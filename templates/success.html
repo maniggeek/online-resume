@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Success{% endblock title %}
+{% block content %}
+  <div class="container-fluid w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+    <h2 class='mb-2' style='color:var(--c-twitter);'>Thank You</h2>
+    <h3 style='color:var(--c-dark);'>I've got your message and I'll Replay So soon</h3>
+    <a  style='color:var(--c-dark); text-decoration:underline; font-size:1.5rem;' href="{% url 'index' %}">Back Home</a>
+  </div>
+
+
+{% endblock content %}

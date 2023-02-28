@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <!--meta section-->
+    <meta charset="utf-8">
+    <meta http-equiv='XU-A-Compatible' content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--style links-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+
+
+  </head>
+  <body class='' data-bs-spy='scroll' data-bs-target='#navbar'>
+
+  {% block content %}
+
+  {% endblock content %}
+  <!--================Footer Area =================-->
+
+
+
+  <!--JavaScript-->
+  <script src="{% static 'assets/js/jquery.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+
+  <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="{% static 'assets/js/script.js' %}"></script>
+  </body>
+</html>
